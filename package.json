@@ -1,6 +1,6 @@
 {
   "name": "@dovyp/plugin-clipboard-copy",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "copy plugin for code blocks",
   "main": "index.js",
   "publishConfig": {
