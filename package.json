@@ -1,6 +1,6 @@
 {
   "name": "@dovyp/plugin-clipboard-copy",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "copy plugin for code blocks",
   "main": "index.js",
   "publishConfig": {
@@ -9,7 +9,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dovy/plugin-clipboard-copy.git",
-    "directory": "packages/@dovy/plugin-clipboard-copy"
+    "directory": "packages/@dovyp/plugin-clipboard-copy"
   },
   "keywords": [
     "documentation",
