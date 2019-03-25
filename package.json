@@ -9,7 +9,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dovy/plugin-clipboard-copy.git",
-    "directory": "packages/dovy/plugin-clipboard-copy"
+    "directory": "packages/@dovy/plugin-clipboard-copy"
   },
   "keywords": [
     "documentation",
