@@ -1,5 +1,5 @@
 {
-  "name": "dovyp/plugin-clipboard-copy",
+  "name": "@dovyp/plugin-clipboard-copy",
   "version": "1.0.0-alpha.1",
   "description": "copy plugin for code blocks",
   "main": "index.js",
