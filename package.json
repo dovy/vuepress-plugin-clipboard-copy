@@ -20,6 +20,9 @@
   "dependencies": {
   },
   "author": "Dovy <me@dovy.io>",
+  "contributors": [
+    "Mikhail Kuznetcov (https://github.com/vuejs/vuepress/pull/751)"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dovy/plugin-clipboard-copy/issues"
