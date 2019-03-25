@@ -17,7 +17,7 @@ export default {
 	methods: {
 		updateCopy() {
 			setTimeout( () => {
-				document.querySelectorAll( SELECTOR ).forEach( this.generateCopyButton )
+				document.querySelectorAll( COPY_SELECTOR ).forEach( this.generateCopyButton )
 			}, 1000 )
 		},
 		generateCopyButton: function( parent ) {
