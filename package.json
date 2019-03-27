@@ -1,6 +1,6 @@
 {
   "name": "@dovyp/vuepress-clipboard-copy",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "description": "VuePress copy plugin for code blocks",
   "main": "index.js",
   "publishConfig": {
@@ -8,8 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dovy/vuepress-clipboard-copy.git",
-    "directory": "packages/@dovyp/vuepress-clipboard-copy"
+    "url": "git+https://github.com/dovy/vuepress-clipboard-copy.git"
   },
   "keywords": [
     "documentation",
