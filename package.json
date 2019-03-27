@@ -1,14 +1,14 @@
 {
-  "name": "@dovyp/vuepress-clipboard-copy",
-  "version": "1.0.0-alpha.5",
-  "description": "VuePress copy plugin for code blocks",
+  "name": "@dovyp/vuepress-plugin-clipboard-copy",
+  "version": "1.0.0-alpha.6",
+  "description": "VuePress plugin for copying code blocks",
   "main": "index.js",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dovy/vuepress-clipboard-copy.git"
+    "url": "git+https://github.com/dovy/vuepress-plugin-clipboard-copy.git"
   },
   "keywords": [
     "documentation",
@@ -24,7 +24,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dovy/vuepress-clipboard-copy/issues"
+    "url": "https://github.com/dovy/vuepress-plugin-clipboard-copy/issues"
   },
-  "homepage": "https://github.com/dovy/vuepress-clipboard-copy#readme"
+  "homepage": "https://github.com/dovy/vuepress-plugin-clipboard-copy#readme"
 }
