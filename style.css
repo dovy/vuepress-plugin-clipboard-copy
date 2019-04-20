@@ -18,4 +18,6 @@ div[class*="language-"] pre:hover .code-copy {
   opacity: 1;
 }
 
-
+.content pre, .content pre[class*=language-] {
+    overflow-y: hidden;
+}
