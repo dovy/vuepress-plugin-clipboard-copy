@@ -1,6 +1,6 @@
 {
   "name": "@dovyp/vuepress-plugin-clipboard-copy",
-  "version": "1.0.0-alpha.6",
+  "version": "1.0.0-alpha.7",
   "description": "VuePress plugin for copying code blocks",
   "main": "index.js",
   "publishConfig": {
