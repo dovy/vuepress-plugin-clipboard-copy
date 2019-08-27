@@ -4,7 +4,7 @@ import './style.css'
 
 export default {
 
-	data: () => ({zoom: null}),
+	data: () => ({zoom: null, textTimeout: null}),
 
 	mounted() {
 		this.updateCopy()
@@ -23,13 +23,27 @@ export default {
 		generateCopyButton: function( parent ) {
 			if ( parent.classList.contains( 'codecopy-enabled' ) ) return
 			const copyElement = document.createElement( 'span' )
-			copyElement.className = 'code-copy'
+			copyElement.className = `code-copy ${ ALIGN }`
 			copyElement.title = 'Click to Copy to Clipboard'
 			copyElement.addEventListener( 'click', () => {
 				this.copyToClipboard( parent.innerText )
+				this.generateCopyText( parent )
 			} )
 			parent.appendChild( copyElement )
 			parent.classList.add( 'codecopy-enabled' )
+		},
+		generateCopyText: function( parent ) {
+			clearTimeout( this.textTimeout )
+
+			const textElement = document.createElement( 'span' )
+			textElement.className = `copy-text ${ ALIGN }`
+			textElement.innerHTML = 'Copied'
+
+			parent.appendChild( textElement )
+
+			this.textTimeout = setTimeout(() => {
+				parent.removeChild( textElement )
+			}, 1000)
 		},
 		copyToClipboard: function( str ) {
 			const el = document.createElement( 'textarea' )

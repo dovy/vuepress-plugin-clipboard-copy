@@ -3,11 +3,19 @@
   display: inline-block;
   cursor: pointer;
 }
+
+.top {
+  top: 35px;
+}
+
+.bottom {
+  bottom: 5px;
+}
+
 div[class*="language-"] pre .code-copy {
   position: absolute;
   z-index: 1000;
-  top: 35px;
-  right: 5px;
+  right: 7.5px;
   width: 20px;
   height: 30px;
   content: url('./copy.svg');
@@ -15,9 +23,29 @@ div[class*="language-"] pre .code-copy {
 }
 
 div[class*="language-"] pre:hover .code-copy {
+  opacity: 0.8;
+}
+
+.code-copy:hover {
   opacity: 1;
 }
 
-.content pre, .content pre[class*=language-] {
-    overflow-y: hidden;
+.content pre,
+.content pre[class*=language-] {
+  overflow-y: hidden;
+}
+
+div[class*="language-"] pre .copy-text {
+  position: absolute;
+  z-index: 1000;
+  color: #888;
+  right: 50px;
+  opacity: 0;
+  animation: appear 1s linear;
+}
+
+@keyframes appear {
+  from { opacity: 0; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
 }
