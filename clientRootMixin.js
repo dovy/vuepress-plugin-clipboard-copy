@@ -24,7 +24,7 @@ export default {
 			if ( parent.classList.contains( 'codecopy-enabled' ) ) return
 			const copyElement = document.createElement( 'span' )
 			copyElement.className = 'code-copy'
-			copyElement.title = 'Click to Copy to Clipboard'
+			copyElement.title = OPTIONS.title || 'Click to Copy to Clipboard'
 			copyElement.addEventListener( 'click', () => {
 				this.copyToClipboard( parent.innerText )
 			} )
