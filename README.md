@@ -1,6 +1,3 @@
-# dovy/plugin-clipboard-copy
+Vuepress Code Copy Plugin
 
-> clipboard-copy plugin for vuepress
-
-
-Originated from the work of @rdwatters, see https://github.com/vuejs/vuepress/issues/703.
+> A plugin for Vuepress that appends a copy button (and logic) to every instance of a given selector (defaults to `div[class*="language-"] pre`
