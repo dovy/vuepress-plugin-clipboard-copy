@@ -26,29 +26,21 @@ export default {
 			copyElement.className = 'code-copy'
 			copyElement.title = 'Click to Copy to Clipboard'
 			copyElement.addEventListener( 'click', () => {
-				this.copyToClipboard( parent.innerText )
+				this.copyToClipboard( parent.innerText, copyElement )
 			} )
 			parent.appendChild( copyElement )
 			parent.classList.add( 'codecopy-enabled' )
 		},
-		copyToClipboard: function( str ) {
-			const el = document.createElement( 'textarea' )
-			el.value = str
-			el.setAttribute( 'readonly', '' )
-			el.style.position = 'absolute'
-			el.style.left = '-9999px'
-			document.body.appendChild( el )
-			const selected =
-				document.getSelection().rangeCount > 0
-					? document.getSelection().getRangeAt( 0 )
-					: false
-			el.select()
-			document.execCommand( 'copy' )
-			document.body.removeChild( el )
-			if ( selected ) {
-				document.getSelection().removeAllRanges()
-				document.getSelection().addRange( selected )
-			}
+		copyToClipboard: function( str, copyElement ) {
+			navigator.clipboard.writeText(str)
+				.then(() => {
+					copyElement.classList.add( '_suc' );
+					console.log('success');
+				})
+				.catch(() => {
+					copyElement.classList.add( '_err' );
+					console.log('error');
+				});
 		}
 	}
 }

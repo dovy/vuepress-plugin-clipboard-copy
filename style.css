@@ -3,14 +3,33 @@
   display: inline-block;
   cursor: pointer;
 }
+
+.code-copy::after {
+  position: absolute;
+  right: calc(100% + 8px);
+  background: #424242e5;
+}
+
+.code-copy._suc::after {
+  content: "Content Copied!";
+  opacity: 0; /* for animation to work */
+  animation: fadeout 3s;
+}
+
+.code-copy._err::after {
+  content: "Oops, an error occurred!";
+  opacity: 0; /* for animation to work */
+  animation: fadeout 3s;
+}
+
 div[class*="language-"] pre .code-copy {
   position: absolute;
   z-index: 1000;
   top: 35px;
   right: 5px;
-  width: 20px;
+  width: 24px;
   height: 30px;
-  content: url('./copy.svg');
+  background: no-repeat url('./copy.svg');
   opacity: 0;
 }
 
@@ -20,4 +39,13 @@ div[class*="language-"] pre:hover .code-copy {
 
 .content pre, .content pre[class*=language-] {
     overflow-y: hidden;
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
